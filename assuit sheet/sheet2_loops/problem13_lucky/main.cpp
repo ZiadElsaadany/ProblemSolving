@@ -2,20 +2,33 @@
 using namespace std;
 int main ()  {
 
-string num1 , num2 ;
+int num1 , num2 ;
 cin >> num1 >> num2 ;
-int maximum = max (num1.length() , num2.length() );
-bool flag = true;
-for (int i = 0 ; i < maximum ; i++) {
+    //4 7
+int counter ;
+bool flag;
+bool check =true ;
 
-    if( num1[i] != 4 ||num1[i] != 7 ||  num2[i] != 4   || num2[i]!=7){
-     flag =false  ;
-        break ;
-    }
+for( int i =min(num1 ,num2 )  ; i<=max(num1,num2);i++){
+       counter = i ;
+       flag= 0 ;
+       while(counter != 0 ){
+
+        short digit= counter%10 ;
+        counter = counter /10 ;
+
+        if(digit !=4 && digit !=7){
+            flag = 1 ;
+        }
+       }
+       if(flag == 0 ){
+        cout << i << " ";
+        check = false;
+       }
 
 }
-        if (flag){
-            cout << 4 << " "  << 7 ;
-            }
+if (check){
+    cout << -1<<endl;
+}
 
 }
