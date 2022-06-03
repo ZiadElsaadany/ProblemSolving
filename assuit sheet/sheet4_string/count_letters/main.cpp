@@ -1,27 +1,22 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-    string name ;
-    cin >> name  ;
-    int counter = 0 ;
-    int counter2 = 0;
-    for(int i = 0; i< name.length() ; i+=counter2 ){ //aaabbc   a=3 2
-       counter ++ ;                                  //012345
-       loop :
-       if(name[counter2] == name[counter2+1] ){
-        counter2++ ;
-        counter ++ ;
-        goto loop ;
+       string name  ;
+    int counter= 0  ;
+   cin >> name ;
+  sort(name.begin() , name.end());    //ton sort string  you can use sort function  --> sort (arr.begin(),arr.end()) ;
+   for(int i  = 0 ; i <name.length(); i++ ){
+       if(name[i] == name[i+1]){
+        counter++ ;     //aa
+       }else {
+           counter ++ ;   //aab
+
+       cout << name[i] << " : " << counter <<endl ;
+       counter = 0  ;
        }
-       cout << name[i] << " : " <<counter<<endl ;
-       counter = 0 ;
-    counter2++ ;
-    }
-
-
+   }
     return 0;
 }
 
