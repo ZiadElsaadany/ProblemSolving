@@ -1,0 +1,43 @@
+// Strings   == == = = = = = = = = == =  = =
+
+ /**
+    --    #include <string> to use string 
+    --    #include <algorithm> to use built in function 
+
+    --    .length() = .size()   --> Size of string
+    --    '\0'   last character in string 
+    --    String functions--> 
+             1)swap(x,y)
+             2)sring --> sort(s.begin(),s.end()) // array --> sort(x,x+size)
+             3)reverse(x.begin(),s,end())
+             4)substr(0,3)-->if string name  = "welcome" 
+                                       name2= substr(0,3) ; 
+                                       then name2 = welc
+    -- getline :  
+                 to get sentence from user  
+     string s ;    
+     getline(cin, s)  ;  //ahmed ali  
+     cout  <<   s ;   // print ahmed ali 
+     
+      to input from user then print sentence before '.'         
+       getline ( cin, s, '.'); 
+      
+
+    -- Built functions : 
+       1) min   , max 
+       2) ceil       --> 3.1  -> 4       cout << ceil(X) ;  
+       3) floor      --> 3.6  -> 3
+
+       4) setprecision()   --> #Include <iomanip>   print numbers after .
+           float x  = 3.3 , y = 4.6 ;  
+          cout << fixed<<setprecision(6) <<x+y ;//print 6 numbers after .    
+   
+       5) transform: tolower() - toupper() 
+       string x =  "aaa"; 
+       transfrom(x.begin(),x.end(),x.begin(), ::toupper);
+       cout << x;  //AAA
+
+       6) islower() -- isupper()      
+              check string is lower or upper ? yes or no
+             
+ */
