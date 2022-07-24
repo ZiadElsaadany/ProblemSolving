@@ -9,7 +9,7 @@
     --    String functions--> 
              1)swap(x,y)
              2)sring --> sort(s.begin(),s.end()) // array --> sort(x,x+size)
-             3)reverse(x.begin(),s,end())
+             3)reverse(s.begin(),s.end())
              4)substr(0,3)-->if string name  = "welcome" 
                                        name2= substr(0,3) ; 
                                        then name2 = welc
